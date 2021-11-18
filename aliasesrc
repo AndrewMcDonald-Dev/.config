@@ -1,0 +1,41 @@
+alias s='source ~/.zshrc'
+
+# FUNCTIONS
+cdls () {
+    cd "$@"; ls -A --color=auto
+}
+
+
+alias cl='cdls'
+
+alias sudo='sudo '
+alias la='ls -A'
+alias mkdir='mkdir -p'
+alias po='sudo poweroff'
+alias re='sudo reboot'
+alias upo='sudo pacman -Syyu && sudo poweroff'
+alias v='nvim'
+alias vim='nvim'
+alias bt='bpytop'
+alias pt='bpytop'
+alias pm='pacman'
+alias at='alacritty-themes'
+alias wr='wallpaper-reddit'
+alias cm='cmatrix'
+# ncdu exists
+
+
+# CONFIGS
+alias vbspwm='$EDITOR $XDG_CONFIG_HOME/bspwm/bspwmrc'
+alias vsxhkd='$EDITOR $XDG_CONFIG_HOME/sxhkd/sxhkdrc'
+alias valacritty='$EDITOR $XDG_CONFIG_HOME/alacritty/alacritty.yml'
+alias vnvim='$EDITOR $HOME/.vimrc'
+alias vzsh='$EDITOR $HOME/.zshrc'
+alias valiases='$EDITOR $XDG_CONFIG_HOME/aliasesrc'
+alias vpolybar='$EDITOR $XDG_CONFIG_HOME/polybar/config'
+alias vpicom='$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
+alias vbind='$EDITOR $HOME/.xbindkeysrc'
+
+
+# NETWORK
+alias net='nmtui'

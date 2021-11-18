@@ -1,0 +1,31 @@
+super + g
+    rofi -show run -location 0 -width 32 -lines 5 -columns 1 -line-margin 1 -line-padding 1 -font 'Source Code Pro Medium 24' -hide-scrollbar
+
+super + j
+    brave
+
+super + l
+    discord
+
+super + Return
+    alacritty
+
+#reload sxhkd
+super + shift + f
+    pkill -USR1 -x sxhkd
+
+#Move to toher monitor
+super + space
+    bspc monitor -f next
+
+#reload bspwm
+super + control + g
+    ~/.config/bspwm/bspwmrc
+
+#move through desktops
+super + {w,e,r,t,y,u,i,o}
+    bspc desktop -f {1-8}
+
+#kill
+super + q
+    bspc node -c
