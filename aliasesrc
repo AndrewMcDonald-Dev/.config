@@ -1,0 +1,45 @@
+alias s='source ~/.zshrc'
+
+# FUNCTIONS
+cdls () {
+    cd "$@"; ls -A --color=auto
+}
+
+
+alias cl='cdls'
+
+alias sudo='sudo '
+alias la='ls -A'
+alias mkdir='mkdir -p'
+alias po='sudo poweroff'
+alias re='sudo reboot'
+alias upo='yay -Syyu && sudo poweroff'
+alias ure='yay -Syyu && sudo reboot'
+alias v='nvim'
+alias vim='nvim'
+alias bt='bpytop'
+alias pt='bpytop'
+alias pm='pacman'
+alias at='alacritty-themes'
+alias wr='wallpaper-reddit'
+alias cm='cmatrix'
+alias rm='trash' #this replaces the normal rm command with trash allowing a cache of deleted items
+# fzf for finding files
+# speed-test for testing internet speeds
+# ncdu exists
+alias tetris='tetris --ascii-only'
+
+# CONFIGS
+alias vbspwm='$EDITOR $XDG_CONFIG_HOME/bspwm/bspwmrc'
+alias vsxhkd='$EDITOR $XDG_CONFIG_HOME/sxhkd/sxhkdrc'
+alias valacritty='$EDITOR $XDG_CONFIG_HOME/alacritty/alacritty.yml'
+alias vnvim='$EDITOR $XDG_CONFIG_HOME/nvim/init.vim'
+alias vzsh='$EDITOR $HOME/.zshrc'
+alias valiases='$EDITOR $XDG_CONFIG_HOME/aliasesrc'
+alias vpolybar='$EDITOR $XDG_CONFIG_HOME/polybar/config'
+alias vpicom='$EDITOR $XDG_CONFIG_HOME/picom/picom.conf'
+alias vdunst='$EDITOR $XDG_CONFIG_HOME/dunst/dunstrc'
+
+
+# NETWORK
+alias net='nmtui'
