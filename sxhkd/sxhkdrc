@@ -1,0 +1,40 @@
+super + g
+    rofi -show run -location 0 -width 32 -lines 5 -columns 1 -line-margin 1 -line-padding 1 -font 'Source Code Pro Medium 24' -hide-scrollbar
+
+super + j
+    brave
+
+super + l
+    ~/Downloads/Discord/Discord
+
+super + Return
+    alacritty
+
+#reload sxhkd
+super + shift + f
+    pkill -USR1 -x sxhkd
+
+#Move to toher monitor
+super + space
+    bspc monitor -f next
+
+#reload bspwm
+super + control + g
+    ~/.config/bspwm/bspwmrc
+
+#move through desktops
+super + {w,e,r,t,y,u,i,o}
+    bspc desktop -f {1-8}
+
+#kill
+super + q
+    bspc node -c
+
+# Expand/contract a window by moving one of its side outward/inward
+# super + s : {h,j,k,l}
+#     STEP=20; SELECTION={1,2,3,4}; \
+#     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
+#     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
+
+super + k
+    setxkbmap us
