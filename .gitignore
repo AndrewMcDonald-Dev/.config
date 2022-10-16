@@ -1,14 +1,14 @@
 *
 
-!bspwm
-!sxhkd
+!bspwm/
+!sxhkd/
 !.gitignore
-!alacritty
-!nvim
+!alacritty/
+!nvim/
 !.zshrc
 !aliasesrc
-!polybar
-!picom
-!dunst
-!Autostart
+!polybar/
+!picom/
+!dunst/
+!Autostart/
 
